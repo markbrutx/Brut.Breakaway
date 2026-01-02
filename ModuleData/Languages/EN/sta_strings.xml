@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+      xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/BUTR/Bannerlord.XmlSchemas/master/ModuleLanguage.xsd" >
+  <tags>
+    <tag language="English"/>
+  </tags>
+  <strings>
+	
+	<!-- Mod name -->
+	<string id="Separatism_Mod_Name" text="Separatism Mod"/>
+
+	<!-- Kingdom text -->
+	<string id="Separatism_Kingdom_Name" text="Kingdom of {ClanName}"/>
+	<string id="Separatism_Sultanate_Name" text="Sultanate of {ClanName}"/>
+	<string id="Separatism_Khanate_Name" text="Khanate of {ClanName}"/>
+	<string id="Separatism_Principality_Name" text="Principality of {ClanName}"/>
+	<string id="Separatism_Empire_Name" text="Empire of {ClanName}"/>
+	<string id="Separatism_Kingdom_Ruler_Title" text="King"/>
+	<string id="Separatism_Sultanate_Ruler_Title" text="Sultan"/>
+	<string id="Separatism_Khanate_Ruler_Title" text="Khan"/>
+	<string id="Separatism_Principality_Ruler_Title" text="Knyaz"/>
+	<string id="Separatism_Empire_Ruler_Title" text="Emperor"/>
+	<string id="Separatism_Kingdom_Intro" text="{RebelKingdom} was found in {Year} when the {ClanName} have rised a rebellion against {Ruler} ruler of {Kingdom}."/>
+	<string id="Separatism_Kingdom_Intro_Anarchy" text="{RebelKingdom} was found in {Year} as a result of anarchy in fiefs of the {ClanName} when people of {Settlement} have called {Ruler} on rulership."/>
+	<string id="Separatism_Kingdom_Intro_National" text="{RebelKingdom} was found in {Year} when {Culture} people of {Kingdom} have made a declaration of independence."/>
+	<string id="Separatism_Kingdom_Intro_Chaos" text="{RebelKingdom} was found in {Year} as a result of BIG separation of Calradia."/>
+
+	<!-- Messages -->
+	<string id="Separatism_Anarchy_Rebel" text="People of {Settlement} have broken from {Kingdom} to call {Ruler} on rulership and found the {RebelKingdom}."/>
+	<string id="Separatism_Clan_Rebel" text="The {ClanName} have broken from {Kingdom} to found the {RebelKingdom}."/>
+	<string id="Separatism_Clan_Recruit" text="{FIRST_NAME}, I have heard you are in search of a new sovereign..."/>
+	<string id="Separatism_Clan_Support" text="The {ClanName} have joined the {Kingdom} to support {Ruler}."/>
+	<string id="Separatism_Kingdom_Abandoned" text="The {Kingdom} has been destroyed and the {ClanName} are in search of a new sovereign."/>
+    <string id="Separatism_Kingdom_Destroyed" text="The {Kingdom} has been destroyed and the stories about it will be lost in time."/>
+    <string id="Separatism_Kingdom_Union" text="The {Kingdom} has joined to the {Ally} to fight against common enemy the {Enemy}."/>
+	<string id="Separatism_National_Rebel" text="{Culture} people of {Kingdom} leading by their native lords have rised a rebellion to fight for their independence and found the {RebelKingdom}."/>
+
+	<!-- Settings -->
+	<string id="Separatism_Settings_000" text="Chaos start"/>
+	<string id="Separatism_Settings_001" text="Enable BIG Calradia separation on start of a new game. All clans with fiefs will found their own independent kingdoms."/>
+	<string id="Separatism_Settings_010" text="Minimal number of wars per kindom at start"/>
+	<string id="Separatism_Settings_011" text="At start of a new game each kindom will be at war with specified number of nearest kingdoms."/>
+
+	<string id="Separatism_Settings_100" text="Lord rebellions"/>
+	<string id="Separatism_Settings_101" text="Enable rebellions depending on lord relationship."/>
+	<string id="Separatism_Settings_110" text="Average amount of kingdom fiefs is enough to rebel"/>
+	<string id="Separatism_Settings_111" text="A clan can rebel when amount of its fiefs >= amount of kingdom fiefs / number of kingdom non-mercenary clans."/>
+	<string id="Separatism_Settings_120" text="Minimal amount of kingdom fiefs to rebel"/>
+	<string id="Separatism_Settings_121" text="A clan can rebel when amount of its fiefs >= specified number. The amount of fiefs counts like this: 2 per town, 1 per castle, 0 per village."/>
+	<string id="Separatism_Settings_130" text="Daily rebellion chance"/>
+	<string id="Separatism_Settings_131" text="Daily chance of lord rebellion when all requirements are met. 1 - start a rebellion as soon as possible. 0 - never."/>
+	
+	<string id="Separatism_Settings_800" text="National rebellions"/>
+	<string id="Separatism_Settings_801" text="Enable rebellions depending on number of foreign lords having their culture fiefs in a single kingdom."/>
+	<string id="Separatism_Settings_810" text="Minimal required number of lords"/>
+	<string id="Separatism_Settings_811" text="Number of foreign lords having their culture fiefs in a single kingdom required to start a national rebellion."/>
+	<string id="Separatism_Settings_820" text="Daily rebellion chance"/>
+	<string id="Separatism_Settings_821" text="Daily chance of national rebellion when all requirements are met. 1 - start a rebellion as soon as possible. 0 - never."/>
+
+	<string id="Separatism_Settings_900" text="Anarchy rebellions"/>
+	<string id="Separatism_Settings_901" text="Enable rebellions depending on number of fiefs per single clan and how often lords visit their fiefs."/>
+	<string id="Separatism_Settings_910" text="Critical amount of fiefs per single clan"/>
+	<string id="Separatism_Settings_911" text="A settlement can rebel when owner clan has not less than specified amount of fiefs. The amount of fiefs counts like this: 2 per town, 1 per castle, 0 per village."/>
+	<string id="Separatism_Settings_920" text="Number of days after owner visit to keep order"/>
+	<string id="Separatism_Settings_921" text="A settlement can not rebel when its owner has visited it in last number of days."/>
+	<string id="Separatism_Settings_930" text="Bonus rebel fief for high tier clan"/>
+	<string id="Separatism_Settings_931" text="An anarchy rebellion takes an additional fief when a high tier clan was called on rulership."/>
+	<string id="Separatism_Settings_940" text="Daily rebellion chance"/>
+	<string id="Separatism_Settings_941" text="Daily chance of anarchy rebellion when all requirements are met. 1 - start a rebellion as soon as possible. 0 - never."/>
+
+	<string id="Separatism_Settings_700" text="Settlement rebellions"/>
+	<string id="Separatism_Settings_701" text="Enable rebellions depending on settlement loyalty. Build in game rebellion mechanic. By default is inactive probably for a reason. So use it at your own risk."/>
+	<string id="Separatism_Settings_710" text="Start loyalty threshold"/>
+	<string id="Separatism_Settings_711" text="Loyalty threshold where a rebellion begins. May not be greater than end loyalty threshold."/>
+	<string id="Separatism_Settings_720" text="End loyalty threshold"/>
+	<string id="Separatism_Settings_721" text="Loyalty threshold where a rebellion stops. May not be lesser than start loyalty threshold."/>
+
+	<string id="Separatism_Settings_200" text="Relation thresholds"/>
+	<string id="Separatism_Settings_210" text="Friendship threshold"/>
+	<string id="Separatism_Settings_211" text="Relation threshold where heroes become friends. May not be lesser than hostility threshold."/>
+	<string id="Separatism_Settings_220" text="Hostility threshold"/>
+	<string id="Separatism_Settings_221" text="Relation threshold where heroes become enemies. May not be greater than friendship threshold."/>
+
+	<string id="Separatism_Settings_300" text="Relation changes"/>
+	<string id="Separatism_Settings_310" text="For rebel clan with the ruler"/>
+	<string id="Separatism_Settings_311" text="Relation change between a clan and the ruler as the result of rebellion."/>
+	<string id="Separatism_Settings_320" text="For rebel clan with friend vassals of the ruler"/>
+	<string id="Separatism_Settings_321" text="Relation change between a clan and friend vassals of the ruler as the result of rebellion."/>
+	<string id="Separatism_Settings_330" text="For rebel clan with enemy vassals of the ruler"/>
+	<string id="Separatism_Settings_331" text="Relation change between a clan and enemy vassals of the ruler as the result of rebellion."/>
+	<string id="Separatism_Settings_340" text="For rebel clan with other vassals of the ruler"/>
+	<string id="Separatism_Settings_341" text="Relation change between a clan and other vassals of the ruler as the result of rebellion."/>
+	<string id="Separatism_Settings_350" text="For rulers of united kingdoms"/>
+	<string id="Separatism_Settings_351" text="Relation change between two rulers as the result of union of their kingdoms."/>
+	<string id="Separatism_Settings_360" text="For ruler and supporting clan"/>
+	<string id="Separatism_Settings_361" text="Relation change between the ruler of a weak kingdom and a supporting clan that joined the kingdom."/>
+	<string id="Separatism_Settings_370" text="For clans participating in national rebellion"/>
+	<string id="Separatism_Settings_371" text="Relation change between the rulers of clans participating in national rebellion."/>
+
+	<string id="Separatism_Settings_500" text="Politics"/>
+	<string id="Separatism_Settings_510" text="Keep empty kingdoms"/>
+	<string id="Separatism_Settings_511" text="Allows to keep empty kingdoms unremoved for compatibility with other mods. Separatist empty kingdoms will be removed anyway."/>
+	<string id="Separatism_Settings_520" text="Keep original kindom wars"/>
+	<string id="Separatism_Settings_521" text="Allows to keep all original kingdom wars for a new rebel kingdom."/>
+	<string id="Separatism_Settings_530" text="Allow unions"/>
+	<string id="Separatism_Settings_531" text="Allows friendly kingdoms to unite under banner of one of them."/>
+	
+	<string id="Separatism_Settings_600" text="Banners"/>
+	<string id="Separatism_Settings_610" text="Keep separatist banner colors"/>
+	<string id="Separatism_Settings_611" text="Allows to keep separatist banners unchanged for compatibility with other mods."/>
+	<string id="Separatism_Settings_620" text="Same banner colors for all separatists"/>
+	<string id="Separatism_Settings_621" text="Not works if you choose to keep separatist banner colors."/>
+
+  </strings>
+</base>

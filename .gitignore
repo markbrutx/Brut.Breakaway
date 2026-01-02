@@ -1,0 +1,25 @@
+# Build results
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+
+# IDE
+.vs/
+.idea/
+*.user
+*.suo
+*.userprefs
+
+# NuGet
+packages/
+*.nupkg
+
+# Misc
+*.log
+Thumbs.db
+.DS_Store
+
+# Keep
+!.gitkeep

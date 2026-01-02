@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+      xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/BUTR/Bannerlord.XmlSchemas/master/ModuleLanguage.xsd" >
+  <tags>
+    <tag language="Русский"/>
+  </tags>
+  <strings>
+
+	<!-- Mod name -->
+	<string id="Separatism_Mod_Name" text="Сепаратизм Мод"/>
+
+	<!-- Kingdom text -->
+	<string id="Separatism_Kingdom_Name" text="Королевство {ClanName}"/>
+	<string id="Separatism_Sultanate_Name" text="Султанат {ClanName}"/>
+	<string id="Separatism_Khanate_Name" text="Ханство {ClanName}"/>
+	<string id="Separatism_Principality_Name" text="Княжество {ClanName}"/>
+	<string id="Separatism_Empire_Name" text="Империя {ClanName}"/>
+	<string id="Separatism_Kingdom_Ruler_Title" text="Король"/>
+	<string id="Separatism_Sultanate_Ruler_Title" text="Султан"/>
+	<string id="Separatism_Khanate_Ruler_Title" text="Хан"/>
+	<string id="Separatism_Principality_Ruler_Title" text="Князь"/>
+	<string id="Separatism_Empire_Ruler_Title" text="Император"/>
+	<string id="Separatism_Kingdom_Intro" text="{RebelKingdom} было основано в {Year} году, когда клан {ClanName} восстал против {Ruler} правителя {Kingdom}."/>
+	<string id="Separatism_Kingdom_Intro_Anarchy" text="{RebelKingdom} было основано в {Year} году в результате анархии во владениях клана {ClanName}, когда народ {Settlement} призвал {Ruler} на правление."/>
+	<string id="Separatism_Kingdom_Intro_National" text="{RebelKingdom} было основано в {Year} году когда {Culture} население {Kingdom} объявило о своей независимости."/>
+	<string id="Separatism_Kingdom_Intro_Chaos" text="{RebelKingdom} было основано в {Year} году в результате большого раздробления Кальрадии."/>
+
+	<!-- Messages -->
+	<string id="Separatism_Anarchy_Rebel" text="Народ {Settlement} поднял восстание против {Kingdom}, призвал {Ruler} на правление и основал {RebelKingdom}."/>
+	<string id="Separatism_Clan_Rebel" text="Клан {ClanName} поднял восстание против {Kingdom} и основал {RebelKingdom}."/>
+	<string id="Separatism_Clan_Recruit" text="{FIRST_NAME}, до меня дошли вести о твоих поисках нового господина..."/>
+	<string id="Separatism_Clan_Support" text="Клан {ClanName} присоединился к {Kingdom} чтобы поддержать {Ruler}."/>
+	<string id="Separatism_Kingdom_Abandoned" text="{Kingdom} уничтожены и клан {ClanName} теперь в поисках нового господина."/>
+    <string id="Separatism_Kingdom_Destroyed" text="{Kingdom} уничтожены и скоро все забудут о том что когда-то такое государство существовало."/>
+    <string id="Separatism_Kingdom_Union" text="{Kingdom} присоединились к {Ally} для борьбы с общим врагом {Enemy}."/>
+	<string id="Separatism_National_Rebel" text="{Culture} население {Kingdom} под предвадительством своих родных лордов подняло восстание, чтобы бороться за свою независимость и основало {RebelKingdom}."/>
+
+	<!-- Settings -->
+	<string id="Separatism_Settings_000" text="Хаотичный старт"/>
+	<string id="Separatism_Settings_001" text="Включить большое раздробление Кальрадии при старте новой игры. Все кланы имеющие владения образуют новые независимые королевства."/>
+	<string id="Separatism_Settings_010" text="Минимальное количество войн на одно королевство при старте игры"/>
+	<string id="Separatism_Settings_011" text="При старте новой игры каждое королевство будет в находится в состоянии войны с указанным числом ближайших королевств."/>
+
+	<string id="Separatism_Settings_100" text="Восстания лордов"/>
+	<string id="Separatism_Settings_101" text="Включить восстания зависящие от взаимоотношений между лордами."/>
+	<string id="Separatism_Settings_110" text="Среднего количества феодов достаточно для восстания"/>
+	<string id="Separatism_Settings_111" text="Клан может восстать если количество его феодов >= общее количество феодов королевства / число ненаемных кланов."/>
+	<string id="Separatism_Settings_120" text="Минимальное количество феодов для восстания"/>
+	<string id="Separatism_Settings_121" text="Клан может восстать если количество его феодов >= указанного числа. Количество феодов считается как: 2 на город, 1 на замок, 0 на деревню."/>
+	<string id="Separatism_Settings_130" text="Ежедневный шанс восстания"/>
+	<string id="Separatism_Settings_131" text="Ежедневный шанс восстания лорда, когда все требования выполнены. 1 - поднять восстание при первой возможности. 0 - никогда."/>
+	
+	<string id="Separatism_Settings_800" text="Национальные восстания"/>
+	<string id="Separatism_Settings_801" text="Включить восстания зависящие от числа иностранных лордов, владеющих феодами своей культуры в отдельном государстве."/>
+	<string id="Separatism_Settings_810" text="Минимально необходимое число лордов"/>
+	<string id="Separatism_Settings_811" text="Число иностранных лордов, владеющих феодами своей культуры в отдельном государстве необходимое для начала национального восстания."/>
+	<string id="Separatism_Settings_820" text="Ежедневный шанс восстания"/>
+	<string id="Separatism_Settings_821" text="Ежедневный шанс национального восстания, когда все требования выполнены. 1 - поднять восстание при первой возможности. 0 - никогда."/>
+
+	<string id="Separatism_Settings_900" text="Анархические восстания"/>
+	<string id="Separatism_Settings_901" text="Включить восстания зависящие от числа феодов на один клан и частоты посещения лордами своих поселений."/>
+	<string id="Separatism_Settings_910" text="Критическое количество феодов на один клан"/>
+	<string id="Separatism_Settings_911" text="Поселение может восстать если клан владелец имеет не меньше указанного числа феодов. Количество феодов считается как: 2 на город, 1 на замок, 0 на деревню."/>
+	<string id="Separatism_Settings_920" text="Число дней поддержания порядка после визита правителя"/>
+	<string id="Separatism_Settings_921" text="Поселение не может восстать, если правитель посетил его за указанное число последних дней."/>
+	<string id="Separatism_Settings_930" text="Дополнительный феод для клана высокого ранга"/>
+	<string id="Separatism_Settings_931" text="Анархическое восстание захватит дополнительный феод, если на правление призван клан высокого ранга."/>
+	<string id="Separatism_Settings_940" text="Ежедневный шанс восстания"/>
+	<string id="Separatism_Settings_941" text="Ежедневный шанс анархического восстания, когда все требования выполнены. 1 - поднять восстание при первой возможности. 0 - никогда."/>
+
+	<string id="Separatism_Settings_700" text="Восстания поселений"/>
+	<string id="Separatism_Settings_701" text="Включить восстания зависящие от лояльности поселений. Встроенная в игру механика. По умолчанию выключена. Используйте на свой страх и риск."/>
+	<string id="Separatism_Settings_710" text="Нижняя граница лояльности"/>
+	<string id="Separatism_Settings_711" text="Граница лояльности, ниже которой начинается восстание. Не может быть больше верхней границы лояльности."/>
+	<string id="Separatism_Settings_720" text="Верхняя граница лояльности"/>
+	<string id="Separatism_Settings_721" text="Граница лояльности, выше которой заканчивается восстание. Не может быть меньше нижней границы лояльности."/>
+
+	<string id="Separatism_Settings_200" text="Граничные значения отношений"/>
+	<string id="Separatism_Settings_210" text="Граница дружбы"/>
+	<string id="Separatism_Settings_211" text="Граница отношений, выше которой герои становятся друзьями. Не межет быть меньше границы вражды."/>
+	<string id="Separatism_Settings_220" text="Граница вражды"/>
+	<string id="Separatism_Settings_221" text="Граница отношений, ниже которой герои становятся врагами. Не межет быть больше границы дружбы."/>
+
+	<string id="Separatism_Settings_300" text="Изменения отношений"/>
+	<string id="Separatism_Settings_310" text="Восставшего клана с правителем"/>
+	<string id="Separatism_Settings_311" text="Изменение отношений восставшего клана с правителем как результат восстания."/>
+	<string id="Separatism_Settings_320" text="Восставшего клана с кланами дружественными к правителю"/>
+	<string id="Separatism_Settings_321" text="Изменение отношений восставшего клана с кланами дружественными к правителю как результат восстания."/>
+	<string id="Separatism_Settings_330" text="Восставшего клана с кланами враждебными к правителю"/>
+	<string id="Separatism_Settings_331" text="Изменение отношений восставшего клана с кланами враждебными к правителю как результат восстания."/>
+	<string id="Separatism_Settings_340" text="Восставшего клана с остальными кланами правителя"/>
+	<string id="Separatism_Settings_341" text="Изменение отношений восставшего клана с остальными кланами правителя как результат восстания."/>
+	<string id="Separatism_Settings_350" text="Между правителями объединившихся королевств"/>
+	<string id="Separatism_Settings_351" text="Изменение отношений между правителями двух королевств как резальтат их объединения."/>
+	<string id="Separatism_Settings_360" text="Между правителем и поддержавшим кланом"/>
+	<string id="Separatism_Settings_361" text="Изменение отношений между правителем слабого королевства и присоединившимся к нему для поддержки кланом."/>
+	<string id="Separatism_Settings_370" text="Между участниками национального восстания"/>
+	<string id="Separatism_Settings_371" text="Изменение отношений между главами кланов участвующих в национальном восстании."/>
+
+	<string id="Separatism_Settings_500" text="Политика"/>
+	<string id="Separatism_Settings_510" text="Сохранить пустые королевства"/>
+	<string id="Separatism_Settings_511" text="Позволяет сохранять пустые королевства для совместимости с другими модами. Пустые королевства сепаратистов будут удалены в любом случае."/>
+	<string id="Separatism_Settings_520" text="Сохранять войны исходного королевства"/>
+	<string id="Separatism_Settings_521" text="Позволяет сохранить все войны королевства для отделившегося королевства сепаратистов."/>
+	
+	<string id="Separatism_Settings_600" text="Баннеры"/>
+	<string id="Separatism_Settings_610" text="Сохранить цвета баннера сепаратистов"/>
+	<string id="Separatism_Settings_611" text="Позволяет оставить цвета баннера сепаратистов без изменений для совместимости с другими модами."/>
+	<string id="Separatism_Settings_620" text="Одни и те же цвета баннера для всех сепаратистов"/>
+	<string id="Separatism_Settings_621" text="Не будет работать если выбрано сохранение цвета баннера."/>
+
+  </strings>
+</base>
