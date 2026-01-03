@@ -7,7 +7,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Localization;
 using Brut.Breakaway.Common;
 
-namespace Brut.Breakaway.Behaviours.Behaviours
+namespace Brut.Breakaway.Behaviours
 {
 	public class NationalRebellionBehaviour : CampaignBehaviorBase
 	{

@@ -8,7 +8,7 @@ using HarmonyLib;
 using Brut.Breakaway.Common;
 using Helpers;
 
-namespace Brut.Breakaway.Behaviours.Behaviours
+namespace Brut.Breakaway.Behaviours
 {
 	public class UtilityBehaviour : CampaignBehaviorBase
 	{

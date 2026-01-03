@@ -1,141 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2D276442-3C37-4D09-8BAF-9154E9F7116C}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Brut.Breakaway</RootNamespace>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AssemblyName>Brut.Breakaway</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
-    <GamePath>D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord</GamePath>
+    <RootNamespace>Brut.Breakaway</RootNamespace>
+
+    <GameFolder>D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord</GameFolder>
+    <ModuleFolder>$(GameFolder)\Modules\Brut.Breakaway</ModuleFolder>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <LangVersion>7.3</LangVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>$(GamePath)\Modules\Brut.Breakaway\bin\Win64_Shipping_Client\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <LangVersion>7.3</LangVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\x64\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <OutputPath>$(GamePath)\Modules\Brut.Breakaway\bin\Win64_Shipping_Client\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Bannerlord.MCM" Version="5.11.3" IncludeAssets="compile" />
-    <PackageReference Include="Lib.Harmony" Version="2.2.2" />
-    <Reference Include="System" />
+    <PackageReference Include="Lib.Harmony" Version="2.2.2" IncludeAssets="compile" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="TaleWorlds.CampaignSystem">
-      <HintPath>$(GamePath)\bin\Win64_Shipping_Client\TaleWorlds.CampaignSystem.dll</HintPath>
+      <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.CampaignSystem.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TaleWorlds.CampaignSystem.ViewModelCollection">
-      <HintPath>$(GamePath)\bin\Win64_Shipping_Client\TaleWorlds.CampaignSystem.ViewModelCollection.dll</HintPath>
+      <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.CampaignSystem.ViewModelCollection.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TaleWorlds.Core">
-      <HintPath>$(GamePath)\bin\Win64_Shipping_Client\TaleWorlds.Core.dll</HintPath>
+      <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TaleWorlds.Core.ViewModelCollection">
-      <HintPath>$(GamePath)\bin\Win64_Shipping_Client\TaleWorlds.Core.ViewModelCollection.dll</HintPath>
+      <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.Core.ViewModelCollection.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TaleWorlds.DotNet">
-      <HintPath>$(GamePath)\bin\Win64_Shipping_Client\TaleWorlds.DotNet.dll</HintPath>
+      <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.DotNet.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TaleWorlds.Library">
-      <HintPath>$(GamePath)\bin\Win64_Shipping_Client\TaleWorlds.Library.dll</HintPath>
+      <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.Library.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TaleWorlds.Localization">
-      <HintPath>$(GamePath)\bin\Win64_Shipping_Client\TaleWorlds.Localization.dll</HintPath>
+      <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.Localization.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TaleWorlds.ModuleManager">
-      <HintPath>$(GamePath)\bin\Win64_Shipping_Client\TaleWorlds.ModuleManager.dll</HintPath>
+      <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.ModuleManager.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TaleWorlds.MountAndBlade">
-      <HintPath>$(GamePath)\bin\Win64_Shipping_Client\TaleWorlds.MountAndBlade.dll</HintPath>
+      <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.MountAndBlade.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TaleWorlds.ObjectSystem">
-      <HintPath>$(GamePath)\bin\Win64_Shipping_Client\TaleWorlds.ObjectSystem.dll</HintPath>
+      <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.ObjectSystem.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="StoryMode">
-      <HintPath>$(GamePath)\Modules\StoryMode\bin\Win64_Shipping_Client\StoryMode.dll</HintPath>
+      <HintPath>$(GameFolder)\Modules\StoryMode\bin\Win64_Shipping_Client\StoryMode.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="SandBox.View">
-      <HintPath>$(GamePath)\Modules\SandBox\bin\Win64_Shipping_Client\SandBox.View.dll</HintPath>
+      <HintPath>$(GameFolder)\Modules\SandBox\bin\Win64_Shipping_Client\SandBox.View.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Behaviours\AnarchyRebellionBehaviour.cs" />
-    <Compile Include="Behaviours\NationalRebellionBehaviour.cs" />
-    <Compile Include="Behaviours\UtilityBehaviour.cs" />
-    <Compile Include="Behaviours\LordRebellionBehaviour.cs" />
-    <Compile Include="Common\GameLog.cs" />
-    <Compile Include="Common\ModConfig.cs" />
-    <Compile Include="Common\ModSubModule.cs" />
-    <Compile Include="ClanExtensions.cs" />
-    <Compile Include="ColorExtensions.cs" />
-    <Compile Include="FactionExtension.cs" />
-    <Compile Include="HeroExtensions.cs" />
-    <Compile Include="KingdomExtensions.cs" />
-    <Compile Include="Patches\DiplomaticBartersBehaviorPatch.cs" />
-    <Compile Include="Patches\HeroPatch.cs" />
-    <Compile Include="Patches\MapScreenPatch.cs" />
-    <Compile Include="Patches\RebellionsCampaignBehaviorPatch.cs" />
-    <Compile Include="BreakawayConfig.cs" />
-    <Compile Include="BreakawaySettings.cs" />
-    <Compile Include="BreakawaySubModule.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BreakawaySettlementLoyaltyModel.cs" />
-    <Compile Include="SettlementExtensions.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ModuleData\Languages\EN\language_data.xml" />
-    <Content Include="ModuleData\Languages\EN\sta_strings.xml" />
-    <Content Include="ModuleData\Languages\language_data.xml" />
-    <Content Include="ModuleData\Languages\RU\language_data.xml" />
-    <Content Include="ModuleData\Languages\RU\sta_strings.xml" />
-    <Content Include="SubModule.xml">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>xcopy /Y "$(ProjectDir)SubModule.xml" "$(GamePath)\Modules\Brut.Breakaway\"
-xcopy /Y "$(ProjectDir)breakaway.png" "$(GamePath)\Modules\Brut.Breakaway\"
-xcopy /Y "$(ProjectDir)ModuleData\Languages\language_data.xml" "$(GamePath)\Modules\Brut.Breakaway\ModuleData\Languages\"
-xcopy /Y "$(ProjectDir)ModuleData\Languages\EN\language_data.xml" "$(GamePath)\Modules\Brut.Breakaway\ModuleData\Languages\EN\"
-xcopy /Y "$(ProjectDir)ModuleData\Languages\EN\sta_strings.xml" "$(GamePath)\Modules\Brut.Breakaway\ModuleData\Languages\EN\"
-xcopy /Y "$(ProjectDir)ModuleData\Languages\RU\language_data.xml" "$(GamePath)\Modules\Brut.Breakaway\ModuleData\Languages\RU\"
-xcopy /Y "$(ProjectDir)ModuleData\Languages\RU\sta_strings.xml" "$(GamePath)\Modules\Brut.Breakaway\ModuleData\Languages\RU\"</PostBuildEvent>
-  </PropertyGroup>
+
+  <Target Name="CopyToModules" AfterTargets="Build">
+    <MakeDir Directories="$(ModuleFolder)\bin\Win64_Shipping_Client" />
+    <MakeDir Directories="$(ModuleFolder)\ModuleData\Languages\EN" />
+    <MakeDir Directories="$(ModuleFolder)\ModuleData\Languages\RU" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModuleFolder)\bin\Win64_Shipping_Client" />
+    <Copy SourceFiles="SubModule.xml" DestinationFolder="$(ModuleFolder)" />
+    <Copy SourceFiles="breakaway.png" DestinationFolder="$(ModuleFolder)" Condition="Exists('breakaway.png')" />
+    <Copy SourceFiles="ModuleData\Languages\language_data.xml" DestinationFolder="$(ModuleFolder)\ModuleData\Languages" />
+    <Copy SourceFiles="ModuleData\Languages\EN\language_data.xml" DestinationFolder="$(ModuleFolder)\ModuleData\Languages\EN" />
+    <Copy SourceFiles="ModuleData\Languages\EN\sta_strings.xml" DestinationFolder="$(ModuleFolder)\ModuleData\Languages\EN" />
+    <Copy SourceFiles="ModuleData\Languages\RU\language_data.xml" DestinationFolder="$(ModuleFolder)\ModuleData\Languages\RU" />
+    <Copy SourceFiles="ModuleData\Languages\RU\sta_strings.xml" DestinationFolder="$(ModuleFolder)\ModuleData\Languages\RU" />
+  </Target>
 </Project>

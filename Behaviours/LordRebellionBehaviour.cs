@@ -7,7 +7,7 @@ using TaleWorlds.Localization;
 using Brut.Breakaway.Common;
 using Helpers;
 
-namespace Brut.Breakaway.Behaviours.Behaviours
+namespace Brut.Breakaway.Behaviours
 {
 	public class LordRebellionBehaviour : CampaignBehaviorBase
 	{
